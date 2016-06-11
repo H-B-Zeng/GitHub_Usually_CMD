@@ -69,14 +69,16 @@ git gc	會自動執行重新封裝等動作，但你依然可以自行下達指令執行
 git fsck	檢查 Git 維護的檔案系統是否完整
 ```
 
-###git  git help 
+###git help 
 ```
 詳細的指令與參數說明，可以輸入 git help reset 查詢完整的文件。
 詳細的指令與參數說明，可以輸入 git help checkout 查詢完整的文件。
 ```
 
 -----
-```# 索引檔的操作指令大概有以下幾個：
+
+###索引檔的操作指令大概有以下幾個：
+``` 
 git add
 git mv
 git rm
