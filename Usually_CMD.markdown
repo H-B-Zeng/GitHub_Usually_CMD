@@ -74,22 +74,32 @@ git fsck	檢查 Git 維護的檔案系統是否完整
 git push -u origin master 有更新的上傳到GitHub
 ```
 
+###git branch
+```
+git branch  										 =>查看有哪些分支
+git branch [branch_name]     		 =>建立分支，目前工作目錄維持在自己的分支
+git checkout -b [branch_name]		 =>建立分支，將目前工作目錄切換到新的分支
+git checkout [branch_name]			 =>切換當下的目錄到哪一個分支
+git branch -d [branch_name]			 =>刪除一個分支，如果是當下的分支不可刪除
+git log													 =>查看紀錄
+```
+使用SourceTree 工具可以用圖示，進一步了解分支架構，[使用方法](https://github.com/doggy8088/Learn-Git-in-30-days/blob/master/docs/08%20%E9%97%9C%E6%96%BC%E5%88%86%E6%94%AF%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%A7%80%E5%BF%B5%E8%88%87%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F.markdown)。
+
+
+###git diff 
+```
+git diff                 => 工作目錄 vs 索引
+git diff HEAD            => 工作目錄 vs HEAD
+git diff --cached HEAD   => 索引     vs HEAD
+git diff --cached        => 索引     vs HEAD
+git diff HEAD^ HEAD      => HEAD^   vs HEAD 比較【最新版的前一版】與【最新版】之間的差異
+```
 ###git help 
 ```
 詳細的指令與參數說明，可以輸入 git help reset 查詢完整的文件。
 詳細的指令與參數說明，可以輸入 git help checkout 查詢完整的文件。
+詳細的指令與參數說明，可以輸入 git help branch 查詢完整的文件。
 ```
 
------
-
-###索引檔的操作指令大概有以下幾個：
-``` 
-git add
-git mv
-git rm
-git status
-git commit
-git ls-files
-```
 
 
